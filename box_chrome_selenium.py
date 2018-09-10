@@ -27,7 +27,7 @@ class BoxUpload(unittest.TestCase):
                             EC.presence_of_element_located((By.NAME, "login"))
                         )
 
-        login_field.send_keys("lao_do@apple.com")
+        login_field.send_keys("lao_do@gmail.com")
         login_field.submit()
 
         self.upload_menu = WebDriverWait(self.driver, 30).until(
